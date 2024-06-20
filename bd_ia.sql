@@ -4,7 +4,7 @@ DROP DATABASE bd_ia;
 
 CREATE DATABASE bd_ia;
 
-USE prueba;
+USE bd_ia;
 
 --  create table materias with next columns (id_materia,materia,carrera)
 CREATE TABLE materias (
@@ -48,7 +48,7 @@ CREATE TABLE respuestas(
 
 -- mysql --local-infile=1 -u root -p
 
-LOAD DATA LOCAL INFILE "materias.csv"
+LOAD DATA LOCAL INFILE "csv/bd_ia/materias.csv"
 INTO TABLE materias
 COLUMNS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
